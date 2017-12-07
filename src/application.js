@@ -1,18 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PhotoEditorReactUI from 'photoeditorsdk/js/PhotoEditorReactUI'
+
+import PhotoEditorDesktopUI from 'photoeditorsdk/js/PhotoEditorSDK.UI.DesktopUI.js'
+// import PhotoEditorReactUI from 'photoeditorsdk/js/PhotoEditorSDK.UI.ReactUI.js'
 
 class ApplicationComponent extends React.Component {
   render () {
+    // const { ReactComponent } = PhotoEditorDesktopUI
     const { ReactComponent } = PhotoEditorReactUI
     return (<ReactComponent
-      apiKey='foobarbaz'
+      license='YOUR LICENCE'
       assets={{
         baseUrl: '/node_modules/photoeditorsdk/assets'
       }}
       style={{
-        width: 800,
-        height: 600
+        width: 1024,
+        height: 576
       }} />)
   }
 }
