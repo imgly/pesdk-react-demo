@@ -1,6 +1,6 @@
 {
   "name": "pesdk-react-demo",
-  "version": "0.0.1",
+  "version": "3.6.14",
   "description": "PhotoEditor SDK integration example for ReactJS",
   "main": "index.js",
   "author": "Sascha Gehlich <sascha.gehlich@photoeditorsdk.com>",
