@@ -1,18 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+window.React = React
+window.ReactDOM = ReactDOM
+
 import PhotoEditorDesktopUI from 'photoeditorsdk/js/PhotoEditorSDK.UI.DesktopUI.js'
 // import PhotoEditorReactUI from 'photoeditorsdk/js/PhotoEditorSDK.UI.ReactUI.js'
 
 class ApplicationComponent extends React.Component {
   render () {
-    // const { ReactComponent } = PhotoEditorDesktopUI
-    const { ReactComponent } = PhotoEditorReactUI
+    const { ReactComponent } = PhotoEditorDesktopUI
+    // const { ReactComponent } = PhotoEditorReactUI
     return (<ReactComponent
-      license='YOUR LICENCE'
+      license='YOUR LICENSE'
       assets={{
         baseUrl: '/node_modules/photoeditorsdk/assets'
       }}
+      editor={{image: this.props.image }}
       style={{
         width: 1024,
         height: 576
@@ -22,5 +26,11 @@ class ApplicationComponent extends React.Component {
 
 window.onload = function () {
   const container = document.querySelector('.js-app')
-  ReactDOM.render(<ApplicationComponent />, container)
+
+  const image = new Image()
+
+  image.onload = () => {
+    ReactDOM.render(<ApplicationComponent image={image} />, container)
+  }
+  image.src = '/example.jpg'
 }
