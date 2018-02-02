@@ -21,7 +21,7 @@ Clone the repository, inside the cloned repository run:
 `npm install`
 
 Afterwards, run `npm start` to compile the application and run a web server. Go to
-`http://localhost:8081/build/index.html` to see the example in action.
+`http://localhost:8080/build/index.html` to see the example in action.
 
 ## License
 
