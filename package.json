@@ -1,9 +1,9 @@
 {
   "name": "pesdk-react-demo",
-  "version": "4.1.2",
+  "version": "4.1.5",
   "description": "PhotoEditor SDK integration example for ReactJS",
   "main": "index.js",
-  "author": "Sascha Gehlich <sascha.gehlich@photoeditorsdk.com>",
+  "author": "Team PhotoEditorSDK <contact@photoeditorsdk.com>",
   "scripts": {
     "start": "webpack-dev-server --content-base ."
   },
@@ -17,7 +17,7 @@
     "react-dom": "^15.6.0",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5",
-    "photoeditorsdk": "git://github.com/imgly/pesdk-html5-build.git#v4.1.5"
+    "photoeditorsdk": "v4.1.5"
   },
   "standard": {
     "globals": [
