@@ -6,8 +6,8 @@ import PhotoEditorDesktopUI from 'photoeditorsdk/js/PhotoEditorSDK.UI.DesktopUI.
 
 class ApplicationComponent extends React.Component {
   render () {
-    // const { ReactComponent } = PhotoEditorDesktopUI
-    const { ReactComponent } = PhotoEditorReactUI
+    // const { ReactComponent } = PhotoEditorReactUI
+    const { ReactComponent } = PhotoEditorDesktopUI
     return (<ReactComponent
       license='YOUR LICENCE'
       assets={{
