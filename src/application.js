@@ -4,15 +4,15 @@ import ReactDOM from 'react-dom'
 window.React = React
 window.ReactDOM = ReactDOM
 
-import PhotoEditorDesktopUI from 'photoeditorsdk/js/PhotoEditorSDK.UI.DesktopUI.js'
-// import PhotoEditorReactUI from 'photoeditorsdk/js/PhotoEditorSDK.UI.ReactUI.js'
+import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
+// import PhotoEditorUI from 'photoeditorsdk/react-ui'
 
 class ApplicationComponent extends React.Component {
   render () {
-    const { ReactComponent } = PhotoEditorDesktopUI
-    // const { ReactComponent } = PhotoEditorReactUI
+    const { ReactComponent } = PhotoEditorUI
+
     return (<ReactComponent
-      license='YOUR LICENSE'
+      license='PUT YOUR LICENSE KEY HERE' // e.h. '{"owner":"Imgly Inc.","version":"2.1", ...}'
       assets={{
         baseUrl: '/node_modules/photoeditorsdk/assets'
       }}

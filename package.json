@@ -1,6 +1,6 @@
 {
   "name": "pesdk-react-demo",
-  "version": "4.1.5",
+  "version": "4.2.0",
   "description": "PhotoEditor SDK integration example for ReactJS",
   "main": "index.js",
   "author": "Team PhotoEditorSDK <contact@photoeditorsdk.com>",
@@ -17,7 +17,7 @@
     "react-dom": "^15.6.0",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5",
-    "photoeditorsdk": "v4.1.5"
+    "photoeditorsdk": "~4.3.1"
   },
   "standard": {
     "globals": [
