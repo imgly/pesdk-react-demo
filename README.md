@@ -33,5 +33,4 @@ Made 2013-2017 by @9elements
 
 ## Support or Contact
 
-For support requests, please use our [Support Desk](https://support.photoeditorsdk.com). To contact
-the developers or to obtain an enterprise license, please send a mail to contact@photoeditorsdk.com.
+Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.photoeditorsdk.com/pricing) on our website.
