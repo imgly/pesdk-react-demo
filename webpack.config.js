@@ -16,7 +16,11 @@ module.exports = {
   },
   entry: './application.js',
   module: {
-    loaders: [
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      },
       {
         test: /\.jsx?$/,
         include: /src/,
