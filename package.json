@@ -1,6 +1,6 @@
 {
   "name": "pesdk-react-demo",
-  "version": "4.14.0",
+  "version": "4.14.1",
   "description": "PhotoEditor SDK integration example for ReactJS",
   "main": "index.js",
   "author": "Team PhotoEditorSDK <contact@photoeditorsdk.com>",
@@ -14,7 +14,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
-    "photoeditorsdk": "^4.14.0",
+    "photoeditorsdk": "^4.14.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "style-loader": "^0.23.0",
