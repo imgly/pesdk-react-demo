@@ -11,7 +11,7 @@ any ReactJS application.
 ## Note
 
 [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=React-Demo)
-is a product of 9elements GmbH. In order to use PhotoEditor SDK inside one of your products, please
+is a product of img.ly GmbH. In order to use PhotoEditor SDK inside one of your products, please
 [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=React-Demo).
 
 ## Installation
@@ -29,7 +29,7 @@ Please see [LICENSE](https://github.com/imgly/pesdk-html5-rails/blob/master/LICE
 
 ## Authors and Contributors
 
-Made 2013-2017 by @9elements
+Made 2013-2019 by img.ly
 
 ## Support or Contact
 
