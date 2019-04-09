@@ -21,7 +21,100 @@ Clone the repository, inside the cloned repository run:
 `npm install`
 
 Afterwards, run `npm start` to compile the application and run a web server. Go to
-`http://localhost:8080/build/index.html` to see the example in action.
+`http://localhost:8080/` to see the example in action.
+
+## Switching to the ReactUI
+
+If you want to see what this example looks like with the ReactUI, simply replace these two lines in `src/application.js`
+
+```javascript
+import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
+import Styles from 'photoeditorsdk/css/PhotoEditorSDK.UI.DesktopUI.css'
+```
+
+with the following
+
+```javascript
+import PhotoEditorUI from 'photoeditorsdk/react-ui'
+import Styles from 'photoeditorsdk/css/PhotoEditorSDK.UI.ReactUI.css'
+```
+
+You can find more details about our available UIs [here](https://docs.photoeditorsdk.com/guides/html5/v4/introduction/ui).
+
+## Listening for Events
+
+The `ReactComponent` of both the [DesktopUI](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.DesktopUI.ReactComponent.html) and [ReactUI](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.ReactUI.ReactComponent.html) provides access to the respective UI instance ([DesktopUI](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.DesktopUI.html) or [ReactUI](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.ReactUI.html)) through its `ui` property. 
+
+You can now use this UI instance in order to register callbacks for events.
+
+```javascript
+import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
+
+class ApplicationComponent extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.pesdk = React.createRef()
+  }
+
+  componentDidMount () {
+    var ui = this.pesdk.current.ui
+    ui.on(PhotoEditorUI.Events.EDITOR_READY, () => {
+      console.log("Ready!")
+    })
+
+    editor.ui.on(PhotoEditorUI.Events.EXPORT, img => {
+      console.log("Exported!")
+    })
+  }
+
+  render () {
+    return (<PhotoEditorUI.ReactComponent
+      ref={this.pesdk}
+      license='...'
+      ...
+    />)
+  }
+}
+```
+
+Please refer to our [guides](https://docs.photoeditorsdk.com/guides/html5/v4/concepts/events) for examples and a list of all available events.
+
+## Accessing the SDK functions
+
+Using the `ui` property of the `ReactComponent` mentioned above, you now have access to the UI, Editor and SDK and all of their functions:
+
+```javascript
+import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
+
+class ApplicationComponent extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.pesdk = React.createRef()
+  }
+
+  componentDidMount () {
+    var ui = this.pesdk.current.ui
+    ui.on(PhotoEditorUI.Events.EDITOR_READY, () => {
+      var editor = ui.getEditor()
+      var sdk = editor.getSDK()
+    })
+  }
+
+  render () {
+    return (<PhotoEditorUI.ReactComponent
+      ref={this.pesdk}
+      license='...'
+      ...
+    />)
+  }
+}
+```
+
+
+
+
 
 ## License
 
