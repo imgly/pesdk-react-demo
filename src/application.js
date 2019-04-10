@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
-// import Styles from 'photoeditorsdk/css/PhotoEditorSDK.UI.DesktopUI.css'
-import PhotoEditorUI from 'photoeditorsdk/react-ui'
-import Styles from 'photoeditorsdk/css/PhotoEditorSDK.UI.ReactUI.css'
+import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
+import Styles from 'photoeditorsdk/css/PhotoEditorSDK.UI.DesktopUI.css'
+// import PhotoEditorUI from 'photoeditorsdk/react-ui'
+// import Styles from 'photoeditorsdk/css/PhotoEditorSDK.UI.ReactUI.css'
 
 class ApplicationComponent extends React.Component {
 

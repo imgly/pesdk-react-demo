@@ -45,7 +45,7 @@ You can find more details about our available UIs [here](https://docs.photoedito
 
 The `ReactComponent` of both the [DesktopUI](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.DesktopUI.ReactComponent.html) and [ReactUI](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.ReactUI.ReactComponent.html) provides access to the respective UI instance ([DesktopUI](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.DesktopUI.html) or [ReactUI](https://docs.photoeditorsdk.com/apidocs/html5/v4/PhotoEditorSDK.UI.ReactUI.html)) through its `ui` property. 
 
-You can now use this UI instance in order to register callbacks for events.
+You can use this UI instance in order to register callbacks for events.
 
 ```javascript
 import PhotoEditorUI from 'photoeditorsdk/desktop-ui'
