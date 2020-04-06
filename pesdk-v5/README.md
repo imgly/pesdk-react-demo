@@ -32,7 +32,7 @@ React and React DOM are already insalled using Create React App.
 
 ##### Installing PhotoEditor SDK
 
-- Run `npm install --save photoeditorsdk@5.0.0-rc-3`.
+- Run `npm install --save photoeditorsdk@5.0.0`.
 
 You will be left with following structure in your `node_modules/photoeditorsdk/`
 
