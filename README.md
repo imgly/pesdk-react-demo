@@ -4,8 +4,8 @@ is a product of img.ly GmbH. In order to use PhotoEditor SDK inside one of your 
 
 ## Installation PhotoEditor SDK v5
 
-refer to the (pesdk-v5)[https://github.com/imgly/pesdk-react-demo/tree/master/pesdk-v5]
+refer to the [pesdk-v5](https://github.com/imgly/pesdk-react-demo/tree/master/pesdk-v5)
 
 ## Installation PhotoEditor SDK v4
 
-refer to the (pesdk-v4)[https://github.com/imgly/pesdk-react-demo/tree/master/pesdk-v4]
+refer to the [pesdk-v4](https://github.com/imgly/pesdk-react-demo/tree/master/pesdk-v4)
