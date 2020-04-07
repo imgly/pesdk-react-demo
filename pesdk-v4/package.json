@@ -14,7 +14,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
-    "photoeditorsdk": "^4.22.3",
+    "photoeditorsdk": "^4.23.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "style-loader": "^0.23.0",
