@@ -1,24 +1,28 @@
 import React from 'react'
-import { UIEvent, PhotoEditorSDKUI } from 'photoeditorsdk'
+import { deepmergeAll, UIEvent, PhotoEditorSDKUI } from 'photoeditorsdk'
 
 export class PhotoEditorSDK extends React.Component {
+  config = {
+    container: '#editor',
+    image: '../example.jpg', // Image url or Image path relative to assets folder
+    license: '',
+    /** A pre start script is used to copy the assets from node modules to public directory */
+    assetBaseUrl: 'assets/'
+  }
+
   componentDidMount() {
     this.initEditor()
     // @ts-ignore Make the value global for the Cypress E2E test
     window.initEditor = this.initEditor.bind(this);
   }
 
-  async initEditor() {
+  async initEditor(config = {}) {
     if (this.editor) {
       this.editor.dispose()
     }
-    const editor = await PhotoEditorSDKUI.init({
-      container: '#editor',
-      image: '../example.jpg', // Image url or Image path relative to assets folder
-      license: '',
-      /** A pre start script is used to copy the assets from node modules to public directory */
-      assetBaseUrl: 'assets/'
-    })
+    const editor = await PhotoEditorSDKUI.init(
+      deepmergeAll([this.config, config])
+    )
     this.editor = editor
     // Make the value global for the Cypress E2E test
     window.editor = editor
