@@ -9,3 +9,7 @@ refer to the [pesdk-v5](https://github.com/imgly/pesdk-react-demo/tree/master/pe
 ## Installation PhotoEditor SDK v4
 
 refer to the [pesdk-v4](https://github.com/imgly/pesdk-react-demo/tree/master/pesdk-v4)
+
+## Photo credits
+
+Hot Air Balloon photo (example.jpg) by [ellehem on Unsplash](https://unsplash.com/photos/M0HwJ4j58-w). [License](https://unsplash.com/license).
