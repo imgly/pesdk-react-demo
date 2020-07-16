@@ -12,8 +12,8 @@ export class PhotoEditorSDK extends React.Component {
 
   componentDidMount() {
     this.initEditor()
-    // @ts-ignore Make the value global for the Cypress E2E test
-    window.initEditor = this.initEditor.bind(this);
+    // Make the value global for the Cypress E2E test
+    window.initPesdk = this.initEditor.bind(this);
   }
 
   async initEditor(config = {}) {
@@ -25,7 +25,7 @@ export class PhotoEditorSDK extends React.Component {
     )
     this.editor = editor
     // Make the value global for the Cypress E2E test
-    window.editor = editor
+    window.pesdkEditor = editor
     console.log('PhotoEditorSDK for Web is ready!')
     editor.on(UIEvent.EXPORT, (imageSrc) => {
       console.log('Exported ', imageSrc)
