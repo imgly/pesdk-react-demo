@@ -12,7 +12,9 @@ export class PhotoEditorSDK extends React.Component {
 
   componentDidMount() {
     this.initEditor()
-    // Make the value global for the Cypress E2E test
+
+    // Make the value global for the Cypress end-to-end (E2E) test.
+    // This is not necessary for the PhotoEditorSDK to work and can be removed safely.
     window.initPesdk = this.initEditor.bind(this);
   }
 
@@ -24,12 +26,15 @@ export class PhotoEditorSDK extends React.Component {
       deepmergeAll([this.config, config])
     )
     this.editor = editor
-    // Make the value global for the Cypress E2E test
-    window.pesdkEditor = editor
+
     console.log('PhotoEditorSDK for Web is ready!')
     editor.on(UIEvent.EXPORT, (imageSrc) => {
       console.log('Exported ', imageSrc)
     })
+
+    // Make the value global for the Cypress end-to-end (E2E) test.
+    // This is not necessary for the PhotoEditorSDK to work and can be removed safely.
+    window.pesdkEditor = editor
   }
 
   render() {
