@@ -122,7 +122,7 @@ Please see [LICENSE](https://github.com/imgly/pesdk-html5-rails/blob/master/LICE
 
 ## Authors and Contributors
 
-Made 2013-2019 by img.ly
+Made 2013-2020 by img.ly
 
 ## Support or Contact
 
