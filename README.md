@@ -118,7 +118,7 @@ class ApplicationComponent extends React.Component {
 
 ## License
 
-Please see [LICENSE](https://github.com/imgly/pesdk-react-demo/blob/master/LICENSE.md) for licensing details.
+Please see [LICENSE](LICENSE.md) for licensing details.
 
 ## Authors and Contributors
 
