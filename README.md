@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="http://static.photoeditorsdk.com/logo.png" />
+  <img src="https://img.ly/static/logos/PE.SDK_Logo.svg" />
 </p>
 
 # PhotoEditor SDK integration example for ReactJS
@@ -10,9 +10,9 @@ any ReactJS application.
 
 ## Note
 
-[PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=React-Demo)
+[PhotoEditor SDK](https://img.ly/photo-sdk?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=React-Demo)
 is a product of img.ly GmbH. In order to use PhotoEditor SDK inside one of your products, please
-[request a license](https://account.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=React-Demo).
+[request a license](https://img.ly/pricing?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=React-Demo).
 
 
 ## Let's get started!
@@ -114,7 +114,7 @@ Made 2013-2020 by img.ly
 
 ## Support or Contact
 
-Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://account.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=React-Demo) on our website.
+Use our [service desk](http://support.img.ly) for bug reports or support requests. To request a commercial license, please use the [license request form](https://img.ly/pricing?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=React-Demo) on our website.
 
 
 ## Photo credits
