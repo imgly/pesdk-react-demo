@@ -2,6 +2,8 @@
   <img src="https://img.ly/static/logos/PE.SDK_Logo.svg" />
 </p>
 
+**You can find our latest examples at https://github.com/imgly/pesdk-web-examples.**
+
 # PhotoEditor SDK integration example for ReactJS
 
 This repository contains an example for integrating PhotoEditor SDK into a ReactJS application.
